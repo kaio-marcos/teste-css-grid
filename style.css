@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-size: 18px;
+    display: grid;
+ 
+    grid-template-areas:'header header header header'
+                        'navbar navbar navbar navbar'
+                        'section section part aside'
+                        'batata batata batata batata'
+                        'footer footer footer footer';
+    grid-template-rows: 20vh 15vh 60vh 80vh 30vh;
+    grid-template-columns: 24vw 15.05vw 33vw 26.7vw;
+}
+
+nav{
+    grid-area: navbar; /*chama a navbar di grid*/
+    background-color:black; /*fundo com cor*/
+    display: flex;
+    justify-content: flex-end; /*coloca os itens no canto direito*/
+    align-items: center; /*coloca os itens alinhados*/
+
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+header{
+    grid-area: header;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start; /*coloca a imagem no canto esquerdo na pag*/
+
+}
+header img{
+    height: 80%;
+    border-radius: 200px;
+    
+}
+.part{
+    grid-area: part;
+}
+section{
+    grid-area: section;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.part{
+    background-color: black;
+}
+footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+
+}
+.batata{
+    grid-area: batata;
+    background-image: url('img/ney.jpg');
+}
+.fake p {
+    font-size: 3.2em;
+    color: white;
+}
+.teste-2{
+    font-size: 3.2em;
+}
+.teste-3{
+    font-size: 1.2em;
+}
